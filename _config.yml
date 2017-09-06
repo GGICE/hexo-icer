@@ -1,0 +1,51 @@
+# Meta
+description: A geeker blog.
+keywords: hexo,theme,icer,ggice
+
+# Navigation
+navigation:
+- name: home
+  slug: home
+  url: /
+- name: web development
+  slug: web development
+  url: /tags/web-development/
+- name: soft
+  slug: soft
+  url: /tags/soft/
+- name: os
+  slug: os
+  url: /tags/os/
+- name: others
+  slug: others
+  url: /tags/others/
+- name: archives
+  slug: archives
+  url: /archives
+
+# use url, not username
+social:
+- slug: twitter
+  url: https://twitter.com/iggice
+- slug: github
+  url: https://github.com/ggice
+- slug: facebook
+  url: # https://www.facebook.com/some
+- slug: linkedin
+  url: # https://www.linkedin.com/some
+- slug: weibo
+  url: #http://weibo.com/309683593
+- slug: tumblr
+  url: http://ggice.tumblr.com/
+- slug: dribbble
+  url: https://dribbble.com/ggice
+- slug: email
+  url: mailto:i@ice.gs
+- slug: rss
+	url: /atom.xml
+
+google_analytics: UA-93986029-1
+
+# Local search
+local_search:
+  enable: true

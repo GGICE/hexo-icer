@@ -1,0 +1,53 @@
+@import "./_scss/const";
+
+html {
+  font-size: 15px;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #edeef1;
+  color: $default-color;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;  
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+}
+
+.highlight, pre {
+  overflow: auto;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  border-bottom: 0px;
+  display: inline-block;
+  position: relative;
+  transition: $transition; 
+
+  &:hover {
+    color: $blue1;
+  }
+}
+
+@import "./_scss/header";
+@import "./_scss/loading";
+@import "./_scss/post";
+@import "./_scss/article";
+@import "./_scss/page";
+@import "./_scss/page-nav";
+@import "./_scss/footer";
+@import "./_scss/content";
+@import "./_scss/archive";
+@import "./_scss/social";
+@import "./_scss/search";

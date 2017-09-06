@@ -1,0 +1,84 @@
+@import "./const";
+
+.post-list {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.post {
+  background: $white;
+  padding: 20px 35px;
+  margin-bottom: 45px;
+  transition: all 0.3s ease-in-out 0s;
+
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-header {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .title {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    
+    a {
+      color: #252525;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+    color: $not-importent;
+
+    a {
+      color: $not-importent;
+
+      &:hover {
+        color: $blue1;
+      }
+    }
+  }
+
+  .readmore {
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+
+    & a::before {
+      font-size: 13px;
+      display: inline-block;
+      transition: all 0.3s ease-in-out 0s;
+      position: absolute;
+      opacity: 0;
+      top: 3px;
+      margin-left: 50%;
+    }
+  
+    & a:hover {
+      &::before {
+        opacity: 1;
+        margin-left: 105%;
+      }
+    }
+  }
+
+  .tags {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .icon-tag {
+    font-size: 12px;
+  }
+}

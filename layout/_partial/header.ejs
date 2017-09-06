@@ -1,0 +1,54 @@
+<header class="header">
+  <div class="header-wrapper">
+    <a href="/">
+      <img src="/image/logo.jpg" class="logo"/>
+      <!-- <span class="site-desc">
+        <%- theme.site_desc %>
+      </span> -->
+    </a>
+    <div class="social-wrapper">
+      <% if (theme.social) { %>
+        <% theme.social.forEach(function(value, key) {
+             if (value.url && value.slug) { %>
+          <a href="<%= value.url %>" class="social <%= value.slug %>" target="_blank" rel="external">
+            <span class="iconfont icon-<%= value.slug %>"></span>
+          </a>
+          <% } }); %>
+      <% } %>
+      <a href="#" class="social search-do" target="_blank" rel="external">
+        <span class="iconfont icon-search"></span>
+      </a>
+      <!-- <%- search_form() %> -->
+    </div>
+    <div class="search-wrap">
+      <div class="search-content">
+        <p class="search-input">
+          <span class="iconfont icon-search"></span>
+          <input tabindex="1">
+        </p>
+        <ul class="search-result">
+            <% if (site.tags && site.tags.length) { %>
+              <div class="tags">
+                   <%- list_tags(site.tags, {
+                    show_count: false,
+                    style: 'list',
+                    separator: ' / '
+                  }) %>
+                </div>
+            <% } %>
+        </ul>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <% theme.navigation.forEach(function(value, key) {
+              if (value.url && value.slug && value.name) { %>
+        <a href="<%= value.url %>" class="nav-<%= value.slug %> nav 
+          <%= page.tag === trim(value.name) || 
+              is_home() && trim(value.name) === 'home'|| 
+              is_archive() && trim(value.name) === 'archives' ? 'nav-active' : ''%>">
+          <%= value.name %>
+        </a>
+        <% } }); %>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,19 @@
+.page-nav {
+  margin: 30px 0;
+  text-align: center;
+
+  .prev {
+    margin-right: 10px;    
+  }
+  .next, .prev {
+    border: 1px solid $not-importent;
+    padding: 5px;
+    color: $not-importent;
+    text-transform: uppercase;
+
+    &:hover {
+      border-color: $default-color; 
+      color: $default-color;
+    }
+  }
+}

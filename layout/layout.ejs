@@ -1,0 +1,27 @@
+<%- partial('_partial/head') %>
+<body>
+  
+  <script>NProgress.start();</script>
+  
+  <div id="site-wrapper">
+    
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <script>NProgress.set(0.4);</script>
+    
+    <main id="main" role="main">
+      <%- body %>
+      <script>NProgress.set(0.6);</script>
+    </main>
+    
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+    <script>NProgress.set(0.8);</script>
+    
+  </div>
+
+  <%- partial('_partial/scripts') %>
+  <script>
+    NProgress.done();
+  </script>
+  
+</body>
+</html>

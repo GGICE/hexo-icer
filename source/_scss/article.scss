@@ -1,0 +1,10 @@
+@import "./const";
+
+.article {
+  max-width: $content-width;
+  margin: 0 auto;
+
+  &:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

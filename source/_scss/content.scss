@@ -1,0 +1,13 @@
+.content {
+  pre {
+    display: block;
+    box-sizing: border-box;
+    font-family: "inconsolata",Consolas,monospace,sans-serif;
+    width: 100%;
+    font-size: 13px;
+    padding: 5px;
+    background: #f9f9fa;
+    white-space: pre;
+    overflow: auto;
+  }
+}

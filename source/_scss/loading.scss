@@ -1,0 +1,11 @@
+@import "./const";
+$loading-color: #56AFE2;
+
+#nprogress .bar {
+  background: $loading-color;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: $loading-color;
+  border-left-color: $loading-color;
+}

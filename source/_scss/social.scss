@@ -1,0 +1,45 @@
+@import "const";
+
+.social-wrapper {
+  > .github {
+      &:hover {
+        color: $default-color;
+      }
+  }
+
+  > .twitter {
+    &:hover {
+      color: #30c3ef;
+    }
+  }
+
+  > .rss {
+    &:hover {
+      color: #ffad1f;
+    }
+  }
+
+  > .weibo {
+    &:hover {
+      color: #e6162e;
+    }
+  }
+
+  > .dribbble {
+    &:hover {
+      color: #c32461;
+    }
+  }
+
+  > .tumblr {
+    &:hover {
+      color: #36465d;
+    }
+  }
+
+  > .search-do {
+    &:hover {
+      color: #eb4535;
+    }
+  }
+}
