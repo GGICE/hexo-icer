@@ -1,7 +1,31 @@
 <footer class="footer">
-  
-  <div>Theme <span class="codename">icer</span> designed by <a href="https://ice.gs/" target="_blank">GGICE</a></div>
-  <div>&copy; <a href="/"><%= config.title %></a></div>
-  
+  <div class="footer-wrap">
+    <div class="footer-link">
+      <% if (theme.friendlyLink) { %>
+      <h3>FRIENDLY LINK</h3>
+      <p>
+        <% theme.friendlyLink.forEach(function(link){ %>
+          <a href="<%= link.url %>" target="_blank"><%- link.name %></a>
+        <% }) %>
+      </p>
+      <% } %>
+    </div>
+    <div class="footer-tags">
+      <% if (site.tags && site.tags.length) { %>
+        <h3>TAGS</h3>        
+        <div class="tags">
+             <%- list_tags(site.tags, {
+              show_count: false,
+              style: 'list',
+              separator: ' / '
+            }) %>
+          </div>
+      <% } %>
+    </div>
+    <div class="footer-info">
+        <div>Theme <span class="codename"><a href="https://github.com/GGICE/hexo-icer" target="_blank">icer</a></span> designed & coded by <a href="https://ice.gs/" target="_blank">GGICE</a></div>
+        <div>Copyright &copy; <%= new Date().getUTCFullYear()%>, <a href="/"><%= config.title %></a>  . All rights reserved .</div>
+      </div>
+  </div>
 </footer>
 

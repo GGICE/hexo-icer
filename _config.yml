@@ -23,6 +23,17 @@ navigation:
   slug: archives
   url: /archives
 
+# friendly link
+friendlyLink:
+  - name: Tian1x0
+    url: http://1x0.xyz/
+  - name: Hankzhou
+    url: http://www.royalmice.com/hankzhou/
+  - name: 设计有点货
+    url: http://sjydh.me/
+  - name: Web fundamentals
+    url: https://developers.google.com/web/fundamentals/
+
 # use url, not username
 social:
 - slug: twitter

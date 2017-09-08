@@ -24,13 +24,14 @@
     margin-right: 10px;
 
     &::after {
-      width: 0;
+      width: 10%;
       content: "";
       display: inline-block;
       height: 2px;
       transition: all 0.3s ease-in-out 0s;
       background-color: $blue1;
-      position: absolute;
+      // position: absolute;
+      margin: 5px auto;
       left: 0;
       top: 20px;
       opacity: 0;
@@ -47,23 +48,5 @@
 
   .nav-active {
     color: $blue;
-  }
-}
-
-.social-wrapper {
-  margin: 20px 0;
-  a {
-    color: $not-importent;
-    margin-right: 5px;
-
-    &:hover {
-      color: $blue;
-    }
-  }
-
-  .iconfont {
-    &::before {
-      font-size: 13px;
-    }
   }
 }

@@ -2,7 +2,30 @@
   background-color: $default-color;
   margin-top: 30px;
   padding: 30px;
-  text-align: center;
 
   color: #999999;
+}
+
+.footer-wrap {
+  width: $content-width;
+  margin: 0 auto;
+}
+
+.footer-info {
+  margin: 10px 0;
+  line-height: 1.5;
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
+.footer-link,
+.footer-tags {
+  > h3 {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  > p {
+    margin: 10px 0;
+  }
 }

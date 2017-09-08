@@ -1,6 +1,24 @@
 @import "const";
 
 .social-wrapper {
+  margin: 20px 0;
+
+  a {
+    color: $not-importent;
+    margin-right: 4px;
+    margin-left: 4px;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .iconfont {
+    &::before {
+      font-size: 13px;
+    }
+  }
+
   > .github {
       &:hover {
         color: $default-color;
