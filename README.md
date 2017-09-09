@@ -6,7 +6,7 @@ A simple theme for [Hexo](http://hexo.io).
 
 [ICE.GS](https://ice.gs)
 
-##Version
+## Version
 
 1.0.0
 
@@ -23,7 +23,7 @@ This theme depends on the following Hexo plugins to work correctly:
 
 - hexo-generator-search
 
-In blog root path  `_config.yml` you can set:
+The blog root path  `_config.yml` you can set:
 
 - Config search  (depend on hexo-generator-search)
 - Config disqus or gitalk commit
