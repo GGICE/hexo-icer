@@ -103,10 +103,9 @@
 
   .search-result {
     height: 200px;
-  }
-
-  .tags, .search-no {
-    height: 200px;
+    .tags, .search-no {
+      height: 200px;
+    }
   }
 }
 
@@ -115,14 +114,10 @@
     display: inline-block;
     list-style: none;
     background-color: #353535;
-    margin: 5px;
+    margin: 5px 10px 5px 0;
     padding: 5px;
     font-size: 12px;
     transition: $transition;
-
-    &:first-child {
-      margin-left: 0px;
-    }
 
     &:last-child {
       margin-right: 0px;
