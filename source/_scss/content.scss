@@ -1,3 +1,5 @@
+@import "const";
+
 .content {
   pre {
     display: block;
@@ -9,5 +11,73 @@
     background: #f9f9fa;
     white-space: pre;
     overflow: auto;
+  }
+
+  blockquote {
+    position: relative;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    border-left: 4px solid $blue;
+
+    footer {
+      strong {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  ul {
+    padding-left: 20px; 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 25px;
+    &::before {
+      margin-right: 10px;
+	    content: "#";
+    }
+  }
+
+  h2 {
+    font-size: 21px;
+    &::before {
+      content: "##";
+    }
+  }
+
+  h3 {
+    font-size: 17px;
+    &::before {
+      content: "###";
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    &::before {
+      content: "####";
+    }
+  }
+
+  h5 {
+    font-size: 15px;
+    &::before {
+      content: "#####";
+    }
+  }
+
+  h6 {
+    font-size: 14px;
+    &::before {
+      content: "######";
+    }
   }
 }

@@ -7,4 +7,15 @@
   &:hover {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
+
+  > .article-header {
+    > h2 {
+      font-size: 25px;
+      line-height: 25px;
+      
+      &:hover {
+        font-size: 26px;
+      }
+    }
+  }
 }

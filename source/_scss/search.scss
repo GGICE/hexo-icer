@@ -118,7 +118,15 @@
     margin: 5px;
     padding: 5px;
     font-size: 12px;
-    transition: $transition;    
+    transition: $transition;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
 
     > a {
       color: $white;

@@ -1,10 +1,10 @@
 <footer class="footer">
   <div class="footer-wrap">
     <div class="footer-link">
-      <% if (theme.friendlyLink) { %>
-      <h3>FRIENDLY LINK</h3>
+      <% if (theme.links) { %>
+      <h3>LINKS</h3>
       <p>
-        <% theme.friendlyLink.forEach(function(link){ %>
+        <% theme.links.forEach(function(link){ %>
           <a href="<%= link.url %>" target="_blank"><%- link.name %></a>
         <% }) %>
       </p>

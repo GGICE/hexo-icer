@@ -16,15 +16,15 @@ navigation:
 - name: os
   slug: os
   url: /tags/os/
-- name: others
-  slug: others
-  url: /tags/others/
 - name: archives
   slug: archives
   url: /archives
+- name: About
+  slug: About
+  url: /about/
 
-# friendly link
-friendlyLink:
+# Friendly link
+links:
   - name: Tian1x0
     url: http://1x0.xyz/
   - name: Hankzhou
@@ -34,7 +34,7 @@ friendlyLink:
   - name: Web fundamentals
     url: https://developers.google.com/web/fundamentals/
 
-# use url, not username
+# Social account
 social:
 - slug: twitter
   url: https://twitter.com/iggice
@@ -55,8 +55,12 @@ social:
 - slug: rss
 	url: /atom.xml
 
+# Google analytics
 google_analytics: UA-93986029-1
 
 # Local search
 local_search:
   enable: true
+
+# Favicon
+#favicon: /image/favicon.ico

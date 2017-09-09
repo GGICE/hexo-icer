@@ -15,13 +15,15 @@
           </a>
           <% } }); %>
       <% } %>
+      <% if (theme.local_search && theme.local_search.enable) { %>
       <a href="#" class="social search-do" target="_blank" rel="external">
         <span class="iconfont icon-search"></span>
       </a>
+      <% } %>      
       <!-- <%- search_form() %> -->
     </div>
     <div class="search-wrap">
-      <div class="search-content">
+      <div class="search-content animated fade-in">
         <p class="search-input">
           <span class="iconfont icon-search"></span>
           <input tabindex="1">
@@ -42,10 +44,7 @@
     <nav class="header-nav">
       <% theme.navigation.forEach(function(value, key) {
               if (value.url && value.slug && value.name) { %>
-        <a href="<%= value.url %>" class="nav-<%= value.slug %> nav 
-          <%= page.tag === trim(value.name) || 
-              is_home() && trim(value.name) === 'home'|| 
-              is_archive() && trim(value.name) === 'archives' ? 'nav-active' : ''%>">
+        <a href="<%= value.url %>" class="archives">
           <%= value.name %>
         </a>
         <% } }); %>
