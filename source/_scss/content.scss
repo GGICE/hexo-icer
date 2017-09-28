@@ -80,4 +80,9 @@
       content: "######";
     }
   }
+
+  hr {
+    border: 0;
+    border-top: 1px solid $white2;
+  }
 }
