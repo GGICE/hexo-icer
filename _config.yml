@@ -19,9 +19,9 @@ navigation:
 - name: archives
   slug: archives
   url: /archives
-- name: About
-  slug: About
-  url: /about/
+- name: README
+  slug: README
+  url: /README/
 
 # Friendly link
 links:
