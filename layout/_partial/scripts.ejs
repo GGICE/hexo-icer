@@ -20,6 +20,7 @@
 <% } %>
 
 <% if (config.gitalk){ %>
+  <%- js('js/md5.js') %>
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script>
@@ -32,7 +33,9 @@
         clientSecret: '<%= config.gitalk.clientSecret %>',
         repo: '<%= config.gitalk.repo %>',
         owner: '<%= config.gitalk.owner %>',
-        admin: ['<%= config.gitalk.admin %>']
+        admin: ['<%= config.gitalk.admin %>'],
+        id: MD5(location.pathname),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
       });
       gitalk.render('gitalk-container')
     })();
