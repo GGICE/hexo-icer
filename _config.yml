@@ -58,7 +58,10 @@ social:
 	url: /atom.xml
 
 # Google analytics
-google_analytics: UA-93986029-1
+# google_analytics: UA-93986029-1
+
+# Baidu analytics
+baidu_analytics: 403460ed7637fb6c4a9e09a74e662ca0
 
 # Local search
 local_search:
