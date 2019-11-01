@@ -1,4 +1,4 @@
-<script src="//cdn.x21.xyz/libs/highlight/9.12.0/highlight.pack.js"></script>
+<script src="//cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <%- js('js/main.js') %>
 
@@ -21,8 +21,8 @@
 
 <% if (config.gitalk){ %>
   <%- js('js/md5.js') %>
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <link rel="stylesheet" href="//cdn.staticfile.org/gitalk/1.5.0/gitalk.min.css">
+  <script src="//cdn.staticfile.org/gitalk/1.5.0/gitalk.min.js"></script>
   <script>
     (function () {
       if (!document.querySelector('#gitalk-container')) {
