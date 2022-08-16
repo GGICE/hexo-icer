@@ -25,7 +25,10 @@
     <div class="footer-info">
         <div>Theme <span class="codename"><a href="https://github.com/GGICE/hexo-icer" target="_blank">icer</a></span> designed & coded by <a href="https://ice.gs/" target="_blank">GGICE</a></div>
         <div>Copyright &copy; <%= new Date().getUTCFullYear()%>, <a href="/"><%= config.title %></a>  . All rights reserved .</div>
-      </div>
+    </div>
+    <% if (config.footer && config.footer.content) { %>
+      <div style="font-size: 12px;"><%= config.footer.content %></div>
+    <% } %>
   </div>
 </footer>
 
