@@ -18,19 +18,19 @@ navigation:
   url: /tags/os/
 - name: archives
   slug: archives
-  url: /archives
+  url: /archives/
 - name: README
   slug: README
   url: /README/
 
 # Friendly link
 links:
-  - name: Tian1x0
-    url: http://1x0.xyz/
-  - name: Hankzhou
-    url: http://www.royalmice.com/hankzhou/
-  - name: 设计有点货
-    url: http://sjydh.me/
+  # - name: Tian1x0
+  #   url: http://1x0.xyz/
+  # - name: Hankzhou
+  #   url: http://www.royalmice.com/hankzhou/
+  # - name: 设计有点货
+  #   url: http://sjydh.me/
   - name: Web fundamentals
     url: https://developers.google.com/web/fundamentals/
 
