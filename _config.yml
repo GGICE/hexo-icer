@@ -25,14 +25,21 @@ navigation:
 
 # Friendly link
 links:
-  # - name: Tian1x0
-  #   url: http://1x0.xyz/
-  # - name: Hankzhou
-  #   url: http://www.royalmice.com/hankzhou/
-  # - name: 设计有点货
-  #   url: http://sjydh.me/
-  - name: Web fundamentals
-    url: https://developers.google.com/web/fundamentals/
+  - name: 数字尾巴
+    url: https://www.dgtle.com
+  - name: 少数派
+    url: https://sspai.com
+  - name: 异次元软件世界
+    url: https://www.iplaysoft.com
+  - name: 小众软件
+    url: https://www.appinn.com
+  - name: MDN
+    url: https://developer.mozilla.org/zh-CN/
+  - name: web.dev
+    url: https://web.dev
+
+  - name: 腾讯云
+    url: https://url.cn/Ix8lWi3X
 
 # Social account
 social:
@@ -56,6 +63,9 @@ social:
   url: mailto:i@ice.gs
 - slug: rss
 	url: /atom.xml
+
+
+  
 
 # Google analytics
 # google_analytics: UA-93986029-1
